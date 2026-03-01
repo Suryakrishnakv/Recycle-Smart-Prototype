@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Search - WasteWise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <i class="fas fa-recycle"></i> WasteWise
+        </a>
+        <div class="nav-links">
+            <a href="search.html">Search</a>
+            <a href="recycling-centers.html">Centers</a>
+            <a href="pickup-request.html">Pickup</a>
+            <a href="admin-dashboard.html">Admin</a>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 600px;">
+        <header style="text-align: center; margin-bottom: 2rem;">
+            <h1>Waste Search</h1>
+            <p>Find out where your waste goes.</p>
+        </header>
+
+        <div class="card">
+            <div class="form-group">
+                <input type="text" id="wasteInput" placeholder="Enter item (e.g., battery, plastic bottle, paper)...">
+            </div>
+            <button onclick="searchWaste()" class="btn-large">Search Item</button>
+            <p style="margin-top: 1rem; font-size: 0.8rem; color: var(--text-light);">Try searching for: Battery,
+                Plastic Bottle, Eggshell, or Newspaper</p>
+        </div>
+
+        <div id="searchResult"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 RecycleSmart - Built for SDG 12</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

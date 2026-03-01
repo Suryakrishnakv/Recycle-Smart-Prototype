@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - WasteWise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <i class="fas fa-recycle"></i> WasteWise
+        </a>
+        <div class="nav-links">
+            <a href="search.html">Search</a>
+            <a href="recycling-centers.html">Centers</a>
+            <a href="pickup-request.html">Pickup</a>
+            <a href="admin-dashboard.html">Admin</a>
+        </div>
+    </nav>
+
+    <div class="container" id="dashboardSection">
+        <header style="text-align: center; margin-bottom: 3rem;">
+            <h1>Admin Overview</h1>
+            <p>Real-time analytics for RecycleSmart operations.</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <span class="number" id="totalSearches">0</span>
+                <p>Total Searches</p>
+            </div>
+            <div class="stat-box">
+                <span class="number" id="totalRequests">0</span>
+                <p>Pickup Requests</p>
+            </div>
+            <div class="stat-box">
+                <span class="number" id="mostSearched">-</span>
+                <p>Most Searched Item</p>
+            </div>
+        </div>
+
+        <div class="card" style="text-align: left;">
+            <h3><i class="fas fa-info-circle"></i> Dashboard Information</h3>
+            <p style="margin-top: 1rem;">This dashboard tracks user interactions stored in the browser's local storage.
+                In a real-world scenario, this would be connected to a secure backend database.</p>
+            <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                <li><strong>Total Searches:</strong> Measures user interest in waste classification.</li>
+                <li><strong>Pickup Requests:</strong> Tracks active service requests from the community.</li>
+                <li><strong>Most Searched:</strong> Identifies which waste items people struggle with most.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 RecycleSmart - Built for SDG 12</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
